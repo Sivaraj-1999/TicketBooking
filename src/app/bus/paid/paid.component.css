@@ -1,0 +1,48 @@
+body {
+    background-image: url("src\assets\img\nepula-bg.png");
+    background-position: center;
+    background-size: cover;
+      text-align: center;
+      padding: 40px 0;
+     
+      display:flex;
+      /* justify-content:space-evenly; */
+      justify-content: center;
+      flex-direction:row;
+      
+    }
+    img{
+    width:100px;
+    }
+      h1 {
+        color: orchid;
+        font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: orchid;
+        font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+        font-size:20px;
+        margin: 0;
+      }
+    i {
+      color: #9ABC66;
+      font-size: 100px;
+      line-height: 200px;
+      margin-left:-15px;
+    }
+    .card {
+
+      /* background-position:center;	   */
+      /* margin-right: 200px; */
+      /* padding-right: 50em; */
+      background: black;
+      padding: 60px;
+      border-radius: 4px;
+      box-shadow: 0 2px 3px #C8D0D8;
+      display: inline-block;
+      margin: 0 auto;
+    }
+   

@@ -1,0 +1,77 @@
+
+body{
+    background-image:url("src\assets\img\nepula-bg.png");
+    background-position: center;
+    background-size: cover;
+    }
+    .booking-form-box
+     {
+    max-width: 350px;
+    border: 1px solid #be409f;
+    margin: 0% auto 0;
+    background-color: black;
+    opacity: 0.8;
+     }
+    .radio-btn
+    {
+    margin: 0 20px;
+    }
+    .radio-btn .btn
+    {
+    margin: 20px 10px 20px 0;
+    box-shadow:none;
+     }
+     .radio-btn .btn::after
+    {
+    content: '';
+    height: 15px;
+    width: 15px;
+    top: 2px;
+    left: -1px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    border: 3px solid #fff;
+    visibility: visible;
+    border-radius: 50%;
+    }
+    .radio-btn .btn:checked::after
+    {
+    content: '';
+    background-color: #000;
+    transition: 0.5s;
+    }
+    .radio-btn span {
+    color: #fff;
+    margin-right: 5px;
+    font-size: 12px;
+    }
+    .booking-form
+    {
+
+    padding: left;
+    }
+    
+    .booking-form label
+    {
+    margin-bottom: -1px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+    }
+    input::placeholder
+     {
+    color: #fff !important;
+    }
+    .input-grp
+    {
+        width:151px;
+        display:inline-block;
+    }
+    table,th{
+        background-color:violet;
+        opacity: 0.6;
+        border: 2px solid black;
+        color: black;
+    
+    }

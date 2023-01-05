@@ -1,0 +1,44 @@
+body{
+  background-image: url("src\assets\img\nepula-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  color: #fff;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+a{
+  color: #333;
+}
+a:hover{
+  color: #E8D426;
+  text-decoration: none;
+}
+.form-control:focus {
+
+    color: #000;
+    background-color: #fff;
+    border:2px solid #E8D426;
+    outline: 0;
+    box-shadow: none;
+
+}
+
+.btn{
+  background:violet;
+  border: #E8D426;
+}
+.btn:hover {
+  background: orchid;
+  border: #E8D426;
+}
+.val{
+  color: red;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: small;
+}
+.p{
+  border: none;
+  background-color: white;
+}

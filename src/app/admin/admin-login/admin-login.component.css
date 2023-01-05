@@ -1,0 +1,81 @@
+body{
+  background-image: url("src\assets\img\nepula-bg.png");
+  background-size:cover;
+  background-position: center;
+}
+h1{
+  color: #fff;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+a{
+  color: #333;
+}
+a:hover{
+  color: #E8D426;
+  text-decoration: none;
+}
+.p{
+  border: none;
+  background-color: white;
+}
+
+.btn{
+  background:violet;
+  border: #E8D426;
+}
+.btn:hover {
+  background: orchid;
+  border: #E8D426;
+}
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: black;
+  text-decoration: none;
+}
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 0px 0;
+  background-color:rgba(255, 0, 255, 0.603);
+ }
+ #header.header-scrolled {
+  background: rgba(55, 142, 181, 0.9);
+  padding: 12px;
+}
+  #header .logo h1 {
+  font-size: 24px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+ .navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+   .navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 6px;
+  margin-left: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:black;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.val{
+  color: red;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+  font-size: smaller;
+}

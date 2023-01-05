@@ -1,0 +1,98 @@
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head> 
+
+<body>
+
+
+  <app-header-login></app-header-login>
+
+  <div class="cont1">
+
+  <h2 style="color: white;">Bus Booking</h2>
+
+     <div class="input-grp">
+
+      <button type="Submit" class="btn btn-danger" routerLink="/BusCart" style="background-color:#ee6bd8 ;">Search </button>
+
+     </div>
+
+    
+
+   <h3 style="color: white;">If You Want to Cancel Your Ticket</h3>
+
+   <form #myForm1="ngForm" (ngSubmit)="deleteBusBooking(myForm1.value.email)">
+
+     <div class="input-grp">
+
+         <label style="color:white;"> Enter Email</label>
+
+         <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+
+         </div>
+
+         <br><br>
+
+     <div class="input-grp">
+
+         <button type="Submit" class="btn btn-danger" style="background-color:#ee6bd8 ;">Cancel </button>
+
+     </div>
+
+     <font color="red"><b>{{ msg }}</b></font>
+
+
+
+   </form>
+
+ </div>
+      
+
+ <div class="con2">  
+
+  <h2 style="color: white;">Train Booking</h2>
+
+
+
+      <div class="input-grp">
+
+          <button type="Submit" class="btn btn-danger" routerLink="/TrainCart" style="background-color:#ee6bd8 ;">Search </button>
+
+      </div>
+
+    <h3 style="color: white;">If You Want to Cancel Your Ticket</h3>
+
+    <form #myForm3="ngForm" (ngSubmit)="deleteTrainBooking(myForm3.value.email)">
+
+      <div class="input-grp">
+
+          <label style="color:white;"> Enter Email</label>
+
+          <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+
+          </div>
+
+          <br>
+
+          <br>
+
+      <div class="input-grp">
+
+          <button type="Submit" class="btn btn-danger" style="background-color:#ee6bd8 ;"> Cancel </button>
+
+      </div>
+
+      <font color="red"><b>{{ msgs }}</b></font>
+
+
+
+    </form>
+
+  </div>
+
+ 
+
+</body>
+
+

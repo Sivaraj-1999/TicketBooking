@@ -1,0 +1,11 @@
+body{
+    background-image: url("src\assets\img\nepula-bg.png");
+    height: 100vh;
+}
+table,th,td{
+    background-color: violet;
+    border: 2px solid black;
+    opacity: 0.6;
+    color: black;
+
+}

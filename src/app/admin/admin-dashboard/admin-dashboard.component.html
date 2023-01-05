@@ -1,0 +1,148 @@
+
+ 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<body>
+     <app-header-login></app-header-login><br><br><br><br>
+    <h2 style="color: white;">Click Here to Show All Bookings</h2>
+    <button class="  btn btn-danger" routerLink="/FindAllBus">Show All Bus Booking</button>&nbsp;
+    <button class="btn btn-danger"routerLink="/FindAllTrain">Show All Train Booking</button>
+    
+    <br><br>
+    <form #myForm4="ngForm" (ngSubmit)="addBusName(myForm4.value)">
+      <div class="booking-form">
+        <h3 style="color: white;">Add Bus Names</h3>
+      <div class="input-grp">
+          <label style="color:white;"><h6> Enter Bus Name</h6></label>
+          <input type="text" class="form-control select-date" name="busname" #busname="ngModel" ngModel/>
+          </div> 
+          <button type="Submit" class="btn btn-danger">Add Bus </button>
+          <font color="red"><b>{{msgss}}</b></font> 
+          </div>
+          </form>
+
+
+
+      <br><br><br><br>
+      <form #myForm="ngForm" (ngSubmit)="findBusBooking(myForm.value.email)">
+        <div class="booking-form">
+          <h2 style="color: white;">Bus Bookings</h2>
+        <div class="input-grp">
+            <label style="color:white;"><h6> Enter Bus User Email</h6></label>
+            <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+            </div>   
+        <div class="input-grp">
+            <button type="Submit" class="btn btn-danger">Search </button>
+          <table>
+            <tr><th colspan="14" style="text-align: center;" >Go-Pal Bookings</th></tr>
+            <tr><th>UserName </th>
+                <th>Email </th>
+            <th>Bus Type </th>
+            <th>On-Board </th>
+            <th>Destination </th>
+            <th>Departure Date </th>
+            <th>Departure Time</th>
+            <th>Adults </th>
+            <th>Children </th>
+            <th>Travel Type </th>
+            <th>Seat No </th>
+            <th>No of Seats </th>
+            <th>Cost/Price </th>
+            <th>Paid </th></tr>
+
+            <tr><th>{{bus.username}}</th>
+              <th>{{bus.email}}</th>
+              <th>{{bus.type}}</th>
+              <th>{{bus.onboard}}</th>
+              <th>{{bus.destination}}</th>
+              <th>{{bus.date}}</th>
+              <th>{{bus.time}}</th>
+              <th>{{bus.adults}}</th>
+              <th>{{bus.children}}</th>
+              <th>{{bus.travel}}</th>
+              <th>{{bus.seatno}}</th>
+              <th>{{bus.noofseats}}</th>
+              <th>{{bus.cost}}</th>
+              <th>{{bus.paid}}</th></tr>
+
+            </table>
+        </div>
+        </div>
+      </form>
+      <h2 style="color: white;">Enter User Email If You Want to Cancel Ticket</h2>
+      <form #myForm1="ngForm" (ngSubmit)="deleteBusBooking(myForm1.value.email)">
+        <div class="input-grp">
+            <label style="color:white;"><h6> Enter Email</h6></label>
+            <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+            </div>
+        <div class="input-grp">
+            <button type="Submit" class="btn btn-danger">Cancel </button>
+        </div>
+        <font color="red"><b>{{msg}}</b></font> 
+      </form>
+      <br><br><br><br><br>
+      <form #myForm2="ngForm" (ngSubmit)="findTrainBooking(myForm2.value.email)">
+        <div class="booking-form">
+        <div class="input-grp">
+          <h2 style="color: white;">Train Bookings</h2>
+            <label style="color:white;"><h6>Enter Train User Email</h6></label>
+            <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+            </div>   
+        <div class="input-grp">
+            <button type="Submit" class="btn btn-danger"> Search </button>
+          <table>
+            <tr><th colspan="15" style="text-align: center;" >Go-Pal Bookings</th></tr>
+            <tr><th>UserName </th>
+                <th>Email </th>
+            <th>Bus Type </th>
+            <th>On-Board </th>
+            <th>Destination </th>
+            <th>Departure Date </th>
+            <th>Departure Time</th>
+            <th>Adults </th>
+            <th>Children </th>
+            <th>Travel Type </th>
+            <th>Quota </th>
+            <th>Seat No </th>
+            <th>No of Seats </th>
+            <th>Cost/Price </th>
+            <th>Paid </th></tr>
+
+            <tr><th>{{train.username}}</th>
+              <th>{{train.email}}</th>
+              <th>{{train.type}}</th>
+              <th>{{train.onboard}}</th>
+              <th>{{train.destination}}</th>
+              <th>{{train.date}}</th>
+              <th>{{train.time}}</th>
+              <th>{{train.adults}}</th>
+              <th>{{train.children}}</th>
+              <th>{{train.travel}}</th>
+              <th>{{train.quota}}</th>
+              <th>{{train.seatno}}</th>
+              <th>{{train.noofseats}}</th>
+              <th>{{train.cost}}</th>
+              <th>{{train.paid}}</th></tr>
+
+            </table>
+        </div>
+        </div>
+      </form>
+      <h2 style="color: white;">Enter User Email If You Want to Cancel Ticket</h2>
+      <form #myForm3="ngForm" (ngSubmit)="deleteTrainBooking(myForm3.value.email)">
+        <div class="input-grp">
+            <label style="color:white;"> Enter Email</label>
+            <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+            </div>
+        <div class="input-grp">
+            <button type="Submit" class="btn btn-danger">Cancel </button>
+        </div>
+        <font color="red"><b>{{ msgs }}</b></font> 
+
+      </form>
+      
+</body>
+
+
+
+

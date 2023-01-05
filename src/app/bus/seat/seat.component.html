@@ -1,0 +1,220 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+  <app-header-login></app-header-login>
+  <br><br><br>
+  <form #myForm="ngForm" (ngSubmit)="insertBusBooking(myForm.value)">
+    <div class="plane">
+      <!-- <div class="busBox"> -->
+        <h1>Bus Seats</h1>
+        <ul class="showcase">
+		<li>
+			<div class="seat selected"></div>Selected
+		</li>
+
+		<li>
+			<div class="seat occupied"></div>Occupied
+		</li>
+	</ul>
+  <div class="input-grp">
+    <label style="color:white;">Email</label>
+    <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+    </div>
+      <div class="fuselage"></div>
+      <br>
+      <div><img src="..\assets\img\stearing.jpg" alt="Holograms" width="50" height="50"></div>
+      <br>
+     <ol>
+        <li class="row row--1">
+          <ol class="seats" type="A">
+            <li class="seat">
+              <input type="checkbox" id="S1" value="S1" name="S1" />
+              <label for="S1">S1</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S2"/>
+              <label for="S2">S2</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S3" />
+              <label for="S3">S3</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S4" />
+              <label for="S4">S4</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--2">
+          <ol class="seats" type="A">
+            <li class="seat">
+              <input type="checkbox" id="S5" />
+              <label for="S5">S5</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S6" />
+              <label for="S6">S6</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S7" />
+              <label for="S7">S7</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S8" />
+              <label for="S8">S8</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--3">
+          <ol class="sleepers" type="B">
+            <li class="sleeper">
+              <input type="checkbox" id="U1" />
+              <label for="U1">U1</label>
+            </li>
+            <li class="sleeper">
+              <input type="checkbox" id="U2" />
+              <label for="U2">U2</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--4">
+          <ol class="sleepers" type="B">
+            <li class="sleeper">
+              <input type="checkbox" id="L1" />
+              <label for="L1">L1</label>
+            </li>
+            <li class="sleeper">
+              <input type="checkbox" id="L2" />
+              <label for="L2">L2</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--5">
+          <ol class="sleepers" type="B">
+            <li class="sleeper">
+              <input type="checkbox" id="U3" />
+              <label for="U3">U3</label>
+            </li>
+            <li class="sleeper">
+              <input type="checkbox" id="U4" />
+              <label for="U4">U4</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--6">
+          <ol class="sleepers" type="B">
+            <li class="sleeper">
+              <input type="checkbox" id="L3" />
+              <label for="L3">L3</label>
+            </li>
+            <li class="sleeper">
+              <input type="checkbox" id="L4"/>
+              <label for="L4">L4</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--7">
+          <ol class="sleepers" type="B">
+            <li class="sleeper">
+              <input type="checkbox" id="U5" />
+              <label for="U5">U5</label>
+            </li>
+            <li class="sleeper">
+              <input type="checkbox" id="U6" />
+              <label for="U6">U6</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--8">
+          <ol class="sleepers" type="B">
+            <li class="sleeper">
+              <input type="checkbox" id="L5" />
+              <label for="L5">L5</label>
+            </li>
+            <li class="sleeper">
+              <input type="checkbox" id="L6"/>
+              <label for="L6">L6</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--9">
+          <ol class="seats" type="A">
+            <li class="seat">
+              <input type="checkbox" id="S9" />
+              <label for="S9">S9</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S10" />
+              <label for="S10">S10</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S11" />
+              <label for="S11">S11</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S12" />
+              <label for="S12">S12</label>
+            </li>
+          </ol>
+        </li>
+        <li class="row row--10">
+          <ol class="seats" type="A">
+            <li class="seat">
+              <input type="checkbox" id="S13" />
+              <label for="S13">S13</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S14" />
+              <label for="S14">S14</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S15" />
+              <label for="S15">S15</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S16" />
+              <label for="S16">S16</label>
+            </li>
+          </ol>
+        </li>
+        <li>
+        <!-- </div> -->
+          <h1>Check Price</h1>
+          <form oninput="cost.value = parseInt(noofseats.value) *550">
+            <label style="color:white;">Enter No of Seats</label>
+            <input name="noofseats" type="text" step="any"><br>
+            <label style="color:white;">Cost / Price -</label>
+            <output name="cost" style="color:white"></output>
+          </form>
+          <h1>Enter Seat Details & Cost</h1>
+          <div class="input-grp">
+            <label style="color:white;">Enter Seat Id / No</label>
+            <input type="text" class="form-control" name="seatno" #seatno="ngModel" ngModel/>
+            </div>
+            <div class="input-grp">
+              <label style="color:white;">Enter No of seats</label>
+              <select class="form-control" name="noofseats" #noofseats="ngModel" ngModel>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select>
+              </div>
+              <div class="input-grp">
+                <label style="color:white;">Enter Cost / Price</label>
+                <select class="form-control" name="cost" #cost="ngModel" ngModel>
+                  <option value="550">1-550</option>
+                  <option value="1100">2-1100</option>
+                  <option value="1650">3-1650</option>
+                  </select>
+                </div>
+          </li>
+</ol>
+
+     <div class="btn">
+      <br>
+      <button type="Submit" class="btn btn-info">PROCEED</button>
+     </div>
+  
+    </div>
+  </form><br>
+</body>

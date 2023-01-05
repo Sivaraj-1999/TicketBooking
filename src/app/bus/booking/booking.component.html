@@ -1,0 +1,80 @@
+<head>
+ 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+
+ <body>
+      <app-header-login></app-header-login><br><br><br><br>
+      <form #myForm="ngForm" (ngSubmit)="insertBusBooking(myForm.value)">
+      <h1 class="text-light" align="center"><span>Bus Booking</span></h1>
+<div class="booking-form-box">
+ <div class="radio-btn">
+<input type="radio"  name="type" value="Normal Bus" #type="ngModel" ngModel/><span>Normal Bus</span>
+<input type="radio" name="type" value="AC Bus" #type="ngModel" ngModel/><span>AC Bus</span> 
+<input type="radio"  name="type" value="Multi-city" #type="ngModel" ngModel/><span>Multi-city</span>
+ </div>
+ <div class="booking-form">
+ <div class="input-grp">
+      <label style="color:white;">Name</label>
+      <input type="text" class="form-control select-date" name="username" #username="ngModel" ngModel/>
+      </div><br>
+      <div class="input-grp">
+            <label style="color:white;">Email</label>
+            <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+            </div>
+
+<label>On-Boarding</label>
+<select class="custom-select" name="onboard" #onboard="ngModel" ngModel>
+      <option value="Chennai">Chennai</option>
+      </select>
+
+<label name="destination"><b style="color:white;">Destination</b></label>
+<select class="custom-select" name="destination" #destination="ngModel" ngModel>
+      <option value="Kerala-Tippusultan Travels">Kerala-Tippusultan Travels</option>
+      <option value="Bengalur-Intercity Travels">Bengalur-Intercity Travels</option>
+      <option value="Hydrabed-YBM Travels">Hydrabed-YBM Travels</option>
+      
+      </select>
+     
+<div class="input-grp">
+<label>Departure Date</label>
+<input type="date" class="form-control select-date" name="date" #date="ngModel" ngModel/>
+</div>
+<div class="input-grp">
+<label  >Time of boarding</label>
+<select class="custom-select" name="time"#time="ngModel" ngModel>
+<option value="10 am">10.00am</option>
+<option value="1 pm">1.00pm</option>
+<option value="4 pm">4.00pm</option>
+<option value="7 pm">7.00pm</option>
+<option value="10 pm">10.00pm</option>
+</select>
+</div>
+ <div class="input-grp">
+ <label style="color:white;">Adults</label>
+ <input type="number" class="form-control"  name="adults" #adults="ngModel" ngModel/>
+ </div>
+ <div class="input-grp">
+ <label style="color:white;">Children</label>
+ <input type="number" class="form-control"  name="children" #children="ngModel" ngModel/>
+ </div>
+ <div class="input-grp">
+ <label style="color:white;">Travel Class</label>
+<select class="custom-select" name="travel" #travel="ngModel" ngModel>
+<option value="Sitting">Sitting</option>
+<option value="Sleeper">Sleeper</option>
+</select>
+ </div>
+ <br>
+
+ <div class="input-grp"><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <button type="Submit" class="btn btn-danger">PROCEED</button>
+ </div>
+ </div>
+</div>
+</form><br><br>
+</body>
+
+ 

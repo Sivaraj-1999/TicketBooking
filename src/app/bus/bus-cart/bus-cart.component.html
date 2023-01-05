@@ -1,0 +1,67 @@
+
+ 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<title> Booking</title>
+<body>
+     <app-header-login></app-header-login><br><br><br><br>
+     <div class="content" style="text-align: center; color: white;">
+     <form #myForm="ngForm" (ngSubmit)="findBusBooking(myForm.value.email)">
+        <br><label><h4>Email</h4></label>&nbsp;<input type="email" name="email" #email="ngModel" ngModel/>
+        <button>Find Ticket</button>
+
+       
+        
+          &nbsp;&nbsp;&nbsp;
+          <input type="button" value="Download PDF" (click)="captureScreen()"/>
+        
+        <div id="contentToConvert" >  
+         
+       <h4 style="color:white"> To Download The PDF of Your Ticket Click Download PDF</h4>
+     
+       <div class="done"><br>
+        <table>
+          <tr><th colspan="14"> <h1>Go-Pal Bookings</h1><br></th></tr>
+          <tr><th>Username</th>
+          <th>Email</th>
+          <th>Bus Type</th>
+          <th>Onboard</th>
+          <th>Destination</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Adults</th>
+          <th> Children</th>
+          <th>Travel</th>
+          <th>SeatNo</th>
+          <th> Seats</th>
+          <th>Cost</th>
+          <th>Paid</th>
+
+          <tr><td>{{bus.username}}</td>
+            <td>{{bus.email}}</td>
+            <td>{{bus.type}}</td>
+            <td>{{bus.onboard}}</td>
+            <td>{{bus.destination}}</td>
+            <td>{{bus.date}}</td>
+            <td>{{bus.time}}</td>
+            <td>{{bus.adults}}</td>
+            <td>{{bus.children}}</td>
+            <td>{{bus.travel}}</td>
+            <td>{{bus.seatno}}</td>
+            <td>{{bus.noofseats}}</td>
+            <td>{{bus.cost}}</td>
+            <td>{{bus.paid}}</td></tr>
+        </table>
+
+    </div>
+        
+ </div>
+
+            </form>
+           <br>
+</div>
+</body>
+
+
+
+

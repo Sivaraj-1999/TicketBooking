@@ -1,0 +1,143 @@
+body{
+  background-image: url("src\assets\img\nepula-bg.png");
+  background-size:cover;
+  background-position: center;
+}
+  h1{
+    color: #fff;
+    padding-bottom: 2rem;
+    font-weight: bold;
+  }
+    a{
+      color: #333;
+    }
+    a:hover{
+      color: #E8D426;
+      text-decoration: none;
+    }
+    .form-control:focus {
+      color: #000;
+      background-color: #fff;
+      border:2px solid #E8D426;
+      outline: 0;
+      box-shadow: none;
+    
+    }
+    .btn{
+      background:violet;
+      border: #E8D426;
+    }
+    .btn:hover {
+      background: orchid;
+      border: #E8D426;
+    }
+    #header .logo h1 a,
+    #header .logo h1 a:hover {
+      color: black;
+      text-decoration: none;
+    }
+   #header {
+      transition: all 0.5s;
+      z-index: 997;
+      transition: all 0.5s;
+      padding: 0px 0;
+      background-color: rgba(255, 0, 255, 0.603);
+     }
+     #header.header-scrolled {
+      background: rgba(55, 142, 181, 0.9);
+      padding: 12px;
+    }
+       #header .logo h1 {
+      font-size: 24px;
+      margin: 0;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+    }
+     .navbar ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+       .navbar a,
+    .navbar a:focus {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 6px;
+      margin-left: 10px;
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color:black;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+    @keyframes slide {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -120px 60px;
+      }
+    }
+    
+    #InfoBanner{
+      margin-bottom: 10px;
+      position: absolute;
+      left: -15px;
+      top: 115px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .reversed {
+      display: inline-block;
+      padding: 0.3em;
+      padding-left: 0.3em;
+      margin-left: 0.8em;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 1;
+      color: #fff;
+      font-size: 15px;
+      background-color:#ef5350;
+    }
+    .reversed:before, .reversed:after {
+      content: '';
+      width: 0;
+      height: 0;
+      right: -0.8em;
+      position: absolute;
+      top: 0;
+      border-top: 0.8em solid #ef5350;
+    }
+    .reversed:after {
+      top: auto;
+      bottom: 0;
+      border-top: none;
+      border-bottom: 0.8em solid #ef5350;
+    }
+    .reversedRight:before, .reversedRight:after{
+      border-right: 0.8em solid transparent;
+      right: -0.8em;
+    }
+    .reversedRight{
+      width: 17px;
+      border-radius: 5px 0px 0px 5px;
+      animation: tilt 2s infinite;
+    }
+    .val{
+      color: red;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      font-size: small;
+    }
+    .p{
+      border: none;
+      background-color: white;
+    }

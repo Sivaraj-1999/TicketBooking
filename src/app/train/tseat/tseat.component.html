@@ -1,0 +1,304 @@
+<body>
+  <app-header-login></app-header-login>
+  <br><br><br>
+  <form #myForm="ngForm" (ngSubmit)="insertBusBooking(myForm.value)">
+    <div class="plane">
+        <h1>Train Seats</h1>
+        <ul class="showcase">
+		<li>
+			<div class="seat selected"></div>Selected
+		</li>
+
+		<li>
+			<div class="seat occupied"></div>Occupied
+		</li>
+	</ul>
+  <div class="input-grp">
+    <label style="color:white;">Email</label>
+    <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+    </div>
+      <div class="fuselage"></div>
+      <div><img src="..\assets\img\stearing.jpg" alt="Holograms" width="50" height="50"></div>
+     <ol>
+        <li class="row row--1">
+          <ol class="seats" type="A">
+            <li class="seat">
+              <input type="checkbox" id="U1" />
+              <label for="U1">U1</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="U2" />
+              <label for="U2">U2</label>
+            </li>
+            <li></li>
+            <li></li>
+          </ol>
+        </li>
+        <li class="row row--2">
+          <ol class="seats" type="A">
+            <li class="seat">
+              <input type="checkbox" id="M1" />
+              <label for="M1">M1</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="M2" />
+              <label for="M2">M2</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S1" />
+              <label for="S1">S1</label>
+            </li>
+            <li class="seat">
+              <input type="checkbox" id="S2" />
+              <label for="S2">S2</label>
+            </li>
+          </ol>
+          </li>
+          <li class="row row--3">
+            <ol class="seats" type="A">
+              <li class="seat">
+                <input type="checkbox" id="L1" />
+                <label for="L1">L1</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="L2" />
+                <label for="L2">L2</label>
+              </li><li>
+              </li>
+              <li></li>
+            </ol>
+            </li>
+<br>
+            <li class="row row--4">
+                <ol class="seats" type="A">
+                  <li class="seat">
+                    <input type="checkbox" id="U3" />
+                    <label for="U3">U3</label>
+                  </li>
+                  <li class="seat">
+                    <input type="checkbox" id="U4" />
+                    <label for="U4">U4</label>
+                  </li>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </li>
+              <li class="row row--5">
+                <ol class="seats" type="A">
+                  <li class="seat">
+                    <input type="checkbox" id="M3" />
+                    <label for="M3">M3</label>
+                  </li>
+                  <li class="seat">
+                    <input type="checkbox" id="M4" />
+                    <label for="M4">M4</label>
+                  </li>
+                  <li class="seat">
+                    <input type="checkbox" id="S3" />
+                    <label for="S3">S3</label>
+                  </li>
+                  <li class="seat">
+                    <input type="checkbox" id="S4" />
+                    <label for="S4">S4</label>
+                  </li>
+                </ol>
+                </li>
+                <li class="row row--6">
+                  <ol class="seats" type="A">
+                    <li class="seat">
+                      <input type="checkbox" id="L3" />
+                      <label for="L3">L3</label>
+                    </li>
+                    <li class="seat">
+                      <input type="checkbox" id="L4" />
+                      <label for="L4">L4</label>
+                    </li><li>
+                    </li>
+                    <li></li>
+                  </ol>
+                  </li>
+ <br>
+                  <li class="row row--7">
+                    <ol class="seats" type="A">
+                      <li class="seat">
+                        <input type="checkbox" id="U5" />
+                        <label for="U5">U5</label>
+                      </li>
+                      <li class="seat">
+                        <input type="checkbox" id="U6" />
+                        <label for="U6">U6</label>
+                      </li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                  </li>
+                  <li class="row row--8">
+                    <ol class="seats" type="A">
+                      <li class="seat">
+                        <input type="checkbox" id="M5" />
+                        <label for="M5">M5</label>
+                      </li>
+                      <li class="seat">
+                        <input type="checkbox" id="M6" />
+                        <label for="M6">M6</label>
+                      </li>
+                      <li class="seat">
+                        <input type="checkbox" id="S5" />
+                        <label for="S5">S5</label>
+                      </li>
+                      <li class="seat">
+                        <input type="checkbox" id="S6" />
+                        <label for="S6">S6</label>
+                      </li>
+                    </ol>
+                    </li>
+                    <li class="row row--9">
+                      <ol class="seats" type="A">
+                        <li class="seat">
+                          <input type="checkbox" id="L5" />
+                          <label for="L5">L5</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="L6" />
+                          <label for="L6">L6</label>
+                        </li><li>
+                        </li>
+                        <li></li>
+                      </ol>
+                      </li>
+<br>
+<li class="row row--10">
+    <ol class="seats" type="A">
+      <li class="seat">
+        <input type="checkbox" id="U7" />
+        <label for="U7">U7</label>
+      </li>
+      <li class="seat">
+        <input type="checkbox" id="U8" />
+        <label for="U8">U8</label>
+      </li>
+      <li></li>
+      <li></li>
+    </ol>
+  </li>
+  <li class="row row--11">
+    <ol class="seats" type="A">
+      <li class="seat">
+        <input type="checkbox" id="M7" />
+        <label for="M7">M7</label>
+      </li>
+      <li class="seat">
+        <input type="checkbox" id="M8" />
+        <label for="M8">M8</label>
+      </li>
+      <li class="seat">
+        <input type="checkbox" id="S7" />
+        <label for="S7">S7</label>
+      </li>
+      <li class="seat">
+        <input type="checkbox" id="S8" />
+        <label for="S8">S8</label>
+      </li>
+    </ol>
+    </li>
+    <li class="row row--12">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="L7" />
+          <label for="L7">L7</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="L8" />
+          <label for="L8">L8</label>
+        </li><li>
+        </li>
+        <li></li>
+      </ol>
+      </li>
+<br>      
+<li class="row row--13">
+    <ol class="seats" type="A">
+      <li class="seat">
+        <input type="checkbox" id="U9" />
+        <label for="U9">U9</label>
+      </li>
+      <li class="seat">
+        <input type="checkbox" id="U10" />
+        <label for="U10">U10</label>
+      </li>
+      <li></li>
+      <li></li>
+    </ol>
+  </li>
+  <li class="row row--14">
+    <ol class="seats" type="A">
+      <li class="seat">
+        <input type="checkbox" id="M9" />
+        <label for="M9">M9</label>
+      </li>
+      <li class="seat">
+        <input type="checkbox" id="M10" />
+        <label for="M10">M10</label>
+      </li>
+      <li class="seat">
+        <input type="checkbox" id="S9" />
+        <label for="S9">S9</label>
+      </li>
+      <li class="seat">
+        <input type="checkbox" id="S10" />
+        <label for="S10">S10</label>
+      </li>
+    </ol>
+    </li>
+    <li class="row row--15">
+      <ol class="seats" type="A">
+        <li class="seat">
+          <input type="checkbox" id="L9" />
+          <label for="L9">L9</label>
+        </li>
+        <li class="seat">
+          <input type="checkbox" id="L10" />
+          <label for="L10">L10</label>
+        </li><li>
+        </li>
+        <li></li>
+      </ol>
+      </li>
+      <li>
+        <h1>Check Price</h1>
+          <form oninput="cost.value = parseInt(noofseats.value) *550">
+            <label style="color:white;">Enter No of Seats</label>
+            <input name="noofseats" type="text" step="any"><br>
+            <label style="color:white;">Cost / Price -</label>
+            <output name="cost" style="color:white"></output>
+          </form>
+          <h1>Enter Seat Details & Cost</h1>
+          <div class="input-grp">
+            <label style="color:white;">Enter Seat Id / No</label>
+            <input type="text" class="form-control" value="seatno" name="seatno" #seatno="ngModel" ngModel/>
+            </div><br>
+            <div class="input-grp">
+              <label style="color:white;">Enter No of seats</label>
+              <select class="form-control" name="noofseats" #noofseats="ngModel" ngModel>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </select>
+              </div><br>
+              <div class="input-grp">
+                <label style="color:white;">Enter Cost / Price</label>
+                <select class="form-control" name="cost" #cost="ngModel" ngModel>
+                  <option value="550">1-550</option>
+                  <option value="1100">2-1100</option>
+                  <option value="1650">3-1650</option>
+                  </select>
+                </div><br>
+        <div class="btn">
+         <button type="Submit" class="btn btn-info">PROCEED</button>
+        </div>
+        </li>
+          </ol>
+    </div>
+    </form>
+</body>
+

@@ -1,0 +1,90 @@
+<head>
+    <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+<body>
+    <app-header-login></app-header-login>
+    <br><br><br><br>
+    <form #myForm="ngForm" (ngSubmit)="insertTrainBooking(myForm.value)">
+      <h1 class="text-light" align="center"><span>Train Booking</span></h1>
+<div class="booking-form-box">
+    <div class="booking-form">
+        <div class="radio-btn">
+            <input type="radio" name="type" value="Roundtrip" #type="ngModel" ngModel><span>Roundtrip</span>
+            <input type="radio"  name="type" value="Oneway" #type="ngModel" ngModel><span>Oneway</span> 
+            <input type="radio"  name="type" value="Multi-city" #type="ngModel" ngModel><span>Multi-city</span>
+            </div>
+    <div class="input-grp">
+        <label style="color:white;">Name</label>
+        <input type="text" class="form-control select-date" name="username" #username="ngModel" ngModel/>
+        </div><br>
+        <div class="input-grp">
+              <label style="color:white;">Email</label>
+              <input type="email" class="form-control select-date" name="email" #email="ngModel" ngModel/>
+              </div>
+
+
+<label>On-Boarding</label>
+<select class="custom-select" name="onboard" #onboard="ngModel" ngModel>
+    <option value="Chennai">Chennai</option>
+    </select>
+<label>Destination</label>
+<select class="custom-select" name="destination" #destination="ngModel" ngModel>
+    <option value="Kerala-Anantapuri Exp">Kerala-Anantapuri Exp</option>
+    <option value="Bangalore-Lalbagh Exp">Bangalore-Lalbagh Exp</option>
+    <option value="Hydrabed-Charminar Exp">Hydrabed-Charminar Exp</option>
+    </select>
+<div class="input-grp">
+<label>Departure Date</label>
+<input type="date" class="form-control select-date" name="date" #date="ngModel" ngModel>
+</div>
+<div class="input-grp">
+    <label>Departure Time</label>
+    <select class="custom-select" name="time" #time="ngModel" ngModel>
+        <option value="10 am">10.00 am</option>
+        <option value="1 pm">1.00 pm</option>
+        <option value="4 pm">4.00 pm</option>
+        <option value="7 pm">7.00 pm</option>
+        <option value="10 pm">10.00 pm</option>
+        </select>
+    </div>
+<div class="input-grp">
+    <label>Adults</label>
+    <input type="number" class="form-control" name="adults" #adults="ngModel" ngModel >
+    </div>
+<div class="input-grp">
+<label>Children</label>
+<input type="number" class="form-control" name="children" #children="ngModel" ngModel>
+</div>
+<div class="input-grp">
+<label>Travel Class</label>
+<select class="custom-select" name="travel" #travel="ngModel" ngModel>
+<option value="All Class">All Class</option>
+<option value="Ac First Class">Ac First Class</option>
+<option value="Ac Sleeper">Ac Sleeper</option>
+<option value="First Class">First Class</option>
+<option value="Second Class">Second Class</option>
+</select>
+</div>
+  
+<div class="input-grp">
+<label>Quota</label>
+<select class="custom-select" name="quota" #quota="ngModel" ngModel>
+<option value="General">General</option>
+<option value="Ladies">Ladies</option>
+<option value="Tatkel">Tatkal</option>
+<option value="Lower Berth/Sr.Citizen">Lower Berth/Sr.Citizen</option>
+<option value="Premium Tatkal">Premium Tatkal</option>
+<option value="Person With Disability">Person With Disability</option>
+</select>
+</div>
+</div>
+<div class="input-grp">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="Submit" class="btn btn-danger">PROCEED</button>
+</div>
+</div><br>
+</form>
+<br><br><br>
+</body>

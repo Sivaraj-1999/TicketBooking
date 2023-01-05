@@ -1,0 +1,65 @@
+
+ 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<title> Booking</title>
+<body>
+  <h1 style="text-align:center">RAILWAY RESERVATION</h1>
+     <app-header-login></app-header-login><br><br><br><br>
+     <div class="content" style="text-align: center; color: white;">
+     <form #myForm="ngForm" (ngSubmit)="findTrainBooking(myForm.value.email)">
+        <label><h4>Email</h4></label><input type="email" name="email" #email="ngModel" ngModel/>
+        <button>Find Ticket</button>&nbsp;
+        <input type="button" value="Download PDF" (click)="captureScreen()"/>
+        
+        <div id="contentToConvert">  
+         
+       <h4 style="color:white"> To Download The Ticket Click Download PDF </h4>
+    <div class="done"><br>
+
+      <table>
+        <tr><th colspan="14"> <h1>Go-Pal Bookings</h1><br></th></tr>
+        <tr><th>Username</th>
+        <th>Email</th>
+        <th>Bus Type</th>
+        <th>Onboard</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Adults</th>
+        <th> Children</th>
+        <th>Travel</th>
+        <th>Quota</th>
+        <th>SeatNo</th>
+        <th> Seats</th>
+        <th>Cost</th>
+        <th>Paid</th>
+
+        <tr><td>{{train.username}}</td>
+          <td>{{train.email}}</td>
+          <td>{{train.type}}</td>
+          <td>{{train.onboard}}</td>
+          <td>{{train.destination}}</td>
+          <td>{{train.date}}</td>
+          <td>{{train.time}}</td>
+          <td>{{train.adults}}</td>
+          <td>{{train.children}}</td>
+          <td>{{train.travel}}</td>
+          <td>{{train.quota}}</td>
+          <td>{{train.seatno}}</td>
+          <td>{{train.noofseats}}</td>
+          <td>{{train.cost}}</td>
+          <td>{{train.paid}}</td></tr>
+      </table>
+
+    </div>
+        
+ </div>
+            </form>
+            <br></div>
+           
+</body>
+
+
+
+
